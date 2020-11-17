@@ -51,6 +51,17 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
 }
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = publishedGroupId
